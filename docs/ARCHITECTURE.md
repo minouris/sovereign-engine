@@ -377,6 +377,8 @@ Recharts library — `UsagePieChart` (usage by category) and `UsageTimelineChart
 | [024](decisions/024-huggingface-background-download.md) | HuggingFace background download | No timeout, progress tracking, auto-registration |
 | [025](decisions/025-token-soft-delete.md) | Token soft delete | Preserves usage history |
 | [026](decisions/026-subdomain-routing.md) | Subdomain-based routing | Host dispatch, cross-subdomain cookies |
+| [028](decisions/028-configurable-rocm-backend-image.md) | Configurable per-device-type image references; GPU backend selected by measurement | Comparing backend images costs a config change rather than a rebuild; no image selected yet, and the existing ROCm performance figure is a misattributed vLLM result |
+| [029](decisions/029-configurable-backend-image-refresh.md) | Configurable image references with a floating-versus-pinned pull policy | Upgrading llama.cpp becomes config, not a rebuild; removes the accidental version pin behind gh#4 |
 
 ### Auth State Management
 
